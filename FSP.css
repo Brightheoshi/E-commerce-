@@ -1,0 +1,204 @@
+body{
+    background-color: white;
+}
+#lnd{
+    position: fixed;
+    background-color: #E0FFFB;
+    top: 0%;
+    left: 0%;
+    /*align-items: center;*/
+    border: none;
+    border-bottom: 1px solid #59A1FF;
+    width: 100%;
+    z-index: 1000;
+}
+#ecm{
+    font-weight: bold;
+    /*letter-spacing: 0.6px;*/
+    font-size: 1em;
+    display: inline;
+    /*text-align: center;*/
+    margin-top: 1.7em;
+    position: absolute;
+    top: 5%;
+    margin-left: 10px;
+}
+#mtt{
+    text-shadow: 3px 4px 5px;
+    font-size: 0.9em;
+    text-align: center;
+    /*margin-top: -3em;*/
+    margin-left: 2.9em;
+    margin-top: -2em;
+    letter-spacing: -0.4px;
+}
+#logo{
+    width: 5em;
+    height: 4.6em;
+    display: inline-block;
+    margin-left: 1em;
+    margin-top: 16px;
+}
+#logo img{
+    width: 5em;
+    height: 4.4em;
+    border-radius: 1em;
+    overflow: hidden;
+    flex-shrink:0;
+}
+#lnd2{
+    border: none;
+    border-bottom: 1px solid #59A1FF;
+    padding-bottom: 2em;
+}
+#search::placeholder{
+    margin-left: 4px;
+    text-align: center;
+}
+#search{
+    margin-left: 5em;
+    margin-top: 8em;
+    height: 3em;
+    width: 19em;
+    border: 3px solid #59A1FF;
+    border-radius: 16px;
+}
+#lnd3{
+    background-color: #FFECB8;
+    margin-top: 5px;
+    display: flex;
+    gap: 4.5em;
+}
+#ship{
+    margin-left: 2em;
+    font-weight: bold;
+    font-family: Georgia;
+    color: green;
+}
+.changeText{
+    font-weight: bold;
+    overflow: hidden;
+    font-family: Sans-Serif;
+}
+.changeText::before{
+    content: "tfhxgghb";
+    animation: changeTxt 6s infinite;
+    animation-duration: 10s;
+}
+@keyframes changeTxt{
+0% { content: "Delivery gurantee"; }
+  25% { content: "Refund for any issue"; }
+  50% { content: "Safe payment $"; }
+  75% { content: "Price adjustment"; }
+  100% { content: "Return within 90days"; }
+}
+ .tab-wrapper {
+    position: relative;
+    border-bottom: 1px solid #eee;
+}
+
+.tab-wrapper input[type="radio"] {
+    display: none; 
+}
+
+#scrollhd {
+    display: flex;
+    gap: 24px;
+    padding: 12px 16px;
+    overflow-x: auto;
+    scrollbar-width: none;
+}
+
+#scrollhd::-webkit-scrollbar {
+    display: none;
+}
+
+.scroll {
+    font-weight: bold;
+    white-space: nowrap;
+    cursor: pointer;
+    color: #666;
+    padding-bottom: 8px;
+    flex-shrink: 0;
+    transition: color 0.3s;
+}
+
+#tab0:checked ~ #scrollhd label[for="tab0"],
+#tab1:checked ~ #scrollhd label[for="tab1"],
+#tab2:checked ~ #scrollhd label[for="tab2"],
+#tab3:checked ~ #scrollhd label[for="tab3"] {
+    color: #59A1FF;
+}
+.indicator {
+    position: absolute;
+    bottom: 0;
+    left: 16px; 
+    height: 3px;
+    background: #59A1FF;
+    border-radius: 3px;
+    transition: all 0.3s ease;
+    width: 30px; 
+}
+#tab0:checked ~ .indicator {
+    left: 16px;
+    width: 30px;
+}
+#tab1:checked ~ .indicator {
+    left: 70px; 
+    width: 90px; 
+}
+#tab2:checked ~ .indicator {
+    left: 184px; 
+    width: 70px; 
+}
+#tab3:checked ~ .indicator {
+    left: 278px;
+    width: 95px;
+}
+#allCol{
+    margin-top: 1.5em;
+    /*gap: 4em;*/
+    border: 3px ;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    column-gap: 0.5em;
+    row-gap: 1em;
+}
+.allTex{
+    margin-left: 5px;
+    font-weight: bold;
+}
+.allPrice{
+    text-align: center;
+    font-size: 23px;
+    font-weight: bold;
+    margin-top: 4px;
+}
+.allItems{
+    border: 2px;
+    /*background-color: #FFECB8;*/
+    min-height: 13em;
+    width: 11em;
+}
+.allItems img{
+    width: 80%;
+    height: 150px;
+    margin-top: 8px;
+    margin-left: 16.4px;
+    object-fit: cover;
+    border-radius: 4px;
+    display: block;
+}
+#phoneCaseCol{
+    display: none;
+}
+#chargerCol{
+    display: none;
+}
+#powerBankCol{
+    display: none;
+}
+#check{
+    display: none;
+}
+
